@@ -56,7 +56,7 @@ public class Main {
                     + "`";
             data.power = mPower.group(1);
         } else {
-            System.out.println("No match");
+            System.err.println("No match");
         }
         return data;
     }
