@@ -1,17 +1,9 @@
-var text1 = '<p style="font-size:14px; margin: 16px 0px 0px 0px"><b>K201FW-FM Technical Details:</b></p>' +
-
-    '<div class="tech_size" style="padding:6px 6px; border:1px solid #999; border-radius:8px; background:#eee; display:table-cell">' +
-    '<table><tr><td class="tech_label tech_nowrap"><b>Station Status</b></td><td class="tech_value">Licensed Class D <a href="/cgi-bin/help?topic=class" title="Help with Radio Station Classes"><img src="/images/q.gif" style="width:12px;height:11px" alt="[Help]"></a> FM Translator <a href="/cgi-bin/help?topic=fx" title="Help with FM Translators"><img src="/images/q.gif" style="width:12px;height:11px" alt="[Help]"></a></td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Digital Status</b></td><td class="tech_value">Analog only</td></tr><tr><td class="tech_label tech_nowrap"><b>Parent Station</b></td><td class="tech_value"><a href="/info/KAWZ-FM"><b>KAWZ-FM</b></a></td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Area of Coverage</b></td><td class="tech_value"><a href="/cgi-bin/pat?call=K201FW&amp;service=FX"><b>View Coverage Map</b></a></td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Vertical Effective Radiated Power</b></td><td class="tech_value">9 Watts</td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Horizontal Height above Avg. Terrain</b></td><td class="tech_value">760 meters (2493 feet)</td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Vertical Height above Ground Level</b></td><td class="tech_value">18 meters (59 feet)</td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Vertical Height above Sea Level</b></td><td class="tech_value">1080 meters (3543 feet)</td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Antenna Pattern</b></td><td class="tech_value">Directional</td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>License Granted</b></td><td class="tech_value">March 23 2006</td></tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>License Expires</b></td><td class="tech_value">December 01 2021</td</tr>' +
-    '<tr><td class="tech_label tech_nowrap"><b>Last FCC Update</b></td><td class="tech_value">November 22 2013</td></tr></table></div>'
+/*
+ ==============================================================
+ Each location is an array of
+     [lat, long, pop-up text, power in watts]
+ ==============================================================
+*/
 
 var locations = [
     [37.159668,-121.911623,`<p style="font-size:14px; margin: 16px 0px 0px 0px"><b>K205BN-FM Technical Details:</b></p>

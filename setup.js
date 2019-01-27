@@ -9,6 +9,19 @@ function initMap() {
         zoom: 9
     });
 
+    //introduce random shift if stations happens to share the same location
+    var knownLocation = [];
+    for (var i = 0, keys = Object.keys(locations), ii = keys.length; i < ii; i++) {
+        console.log('key : ' + keys[i] + ' val : ' + locations[keys[i]][0]);
+        var lat = locations[keys[i]][0];
+        var long = locations[keys[i]][1];
+        if(knownLocation[lat] === undefined) {
+            knownLocation[lat] = long;
+        }else{
+            locations[keys[i]][1] += 0.0001;
+        }
+    }
+
     var markers = locations.map(function (location, i) {
         let marker = new google.maps.Marker({
             position: new google.maps.LatLng(location[0], location[1]),
@@ -28,6 +41,9 @@ function initMap() {
     });
 
     var markerCluster = new MarkerClusterer(map, markers,
-        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'})
+        {
+            imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
+        }
+    )
 }
 
