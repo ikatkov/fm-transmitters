@@ -17,5 +17,12 @@ https://radio-locator.com/cgi-bin/locate?select=city&city=90210
 Capture the resulting list (there is a "list" button) and make all URLs looks like ``https://radio-locator.com/info/KMTG-FM`` 
 * Paste all URLs into a file
 * Mass download all URLs ``get -i <your file>``. You end up with a bunch of files in a folder
-* Now run a bunch of regex to extract the data in the following format `` [lat, long, pop-up text, power in watts]``'
-* Store the data in [data.js]
+* Now run a bunch of regex to extract the data in the following format `` [lat, long, pop-up text, power in watts]``'. 
+See a simple extractor in Java [here](Parser.java). You can run it like
+```
+ javac Parser.java
+ java Parser <folder>
+```
+It attempts to read all the files in the given folder and parse out the data
+* Store the JS array data in [data.js](data.js)
+* Open the main html file. Typically [index.html](index.html)
