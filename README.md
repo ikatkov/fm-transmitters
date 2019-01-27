@@ -24,5 +24,5 @@ See a simple extractor in Java [here](Parser.java). You can run it like
  java Parser <folder>
 ```
 It attempts to read all the files in the given folder and parse out the data
-* Store the JS array data in [data.js](data.js)
+* Store the JS array data in [data-fm.js](data-fm.js)
 * Open the main html file. Typically [index.html](index.html)
